@@ -41,6 +41,9 @@ import VkSdk from "@happysanta/vk-apps-sdk"
 * [.scroll()](#scroll)
 * [.resizeWindow()](#resizewindow)
 * [.getPersonalCard()](#getpersonalcard)
+* [.swipeBackOn()](#swipebackon)
+* [.swipeBackOff()](#swipebackoff)
+* [.closeApp()](#closeapp)
 
 ### api
 
