@@ -427,6 +427,18 @@ VkSdk.swipeBackOn(type)
 VkSdk.swipeBackOff(type)
 ```
 
+### closeApp
+
+Закрытие приложения<br/>
+@param {string} status - статус закрытия приложения, передаваемый в родительское приложение.<br/>
+Возможные значения: failed, success
+@param {Object} payload - данные, передаваемые в родительское приложение.<br/>
+@returns {Promise}
+
+```javascript
+VkSdk.closeApp(type)
+```
+
 ## Как обновить пакет в npm
 
 Обновить код, в package.json изменить версию, затем:

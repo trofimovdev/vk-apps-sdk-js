@@ -549,6 +549,18 @@ export default class VkSdk {
 		return new VkConnectRequest('VKWebAppDisableSwipeBack', {}).send()
 	}
 
+	/**
+	 * Закрытие приложения
+	 * @param {string} status - статус закрытия приложения, передаваемый в родительское приложение.
+	 * Возможные значения: failed, success
+	 * @param {Object} payload - данные, передаваемые в родительское приложение.
+	 * @returns {Promise}
+	 */
+	static closeApp(status, payload = {}) {
+		return new VkConnectRequest('VKWebAppClose', payload,
+			'VKWebAppOpenAppResult', 'VKWebAppCloseFailed').send()
+	}
+
 	static getVkConnect() {
 		return VKConnect
 	}
