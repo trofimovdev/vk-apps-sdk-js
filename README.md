@@ -409,6 +409,23 @@ VkSdk.resizeWindow(width, height)
 VkSdk.getPersonalCard(type)
 ```
 
+### swipeBackOn
+
+Включение Swipe Back на iOS<br/>
+@returns {Promise}
+
+```javascript
+VkSdk.swipeBackOn(type)
+```
+
+### swipeBackOff
+
+Выключение Swipe Back на iOS<br/>
+@returns {Promise}
+
+```javascript
+VkSdk.swipeBackOff(type)
+```
 
 ## Как обновить пакет в npm
 

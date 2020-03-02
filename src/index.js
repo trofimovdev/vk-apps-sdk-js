@@ -533,6 +533,22 @@ export default class VkSdk {
 			'VKWebAppGetPersonalCardResult', 'VKWebAppGetPersonalCardFailed').send()
 	}
 
+	/**
+	 * Включение Swipe Back на iOS
+	 * @returns {Promise}
+	 */
+	static swipeBackOn() {
+		return new VkConnectRequest('VKWebAppEnableSwipeBack', {}).send()
+	}
+
+	/**
+	 * Выключение Swipe Back на iOS
+	 * @returns {Promise}
+	 */
+	static swipeBackOff() {
+		return new VkConnectRequest('VKWebAppDisableSwipeBack', {}).send()
+	}
+
 	static getVkConnect() {
 		return VKConnect
 	}
